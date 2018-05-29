@@ -23,5 +23,8 @@ for run in {1..10}; do
 
   info "Running a traceroute to registry-1.docker.io..."
   time traceroute registry-1.docker.io
+
+  info "Running apt-key for yarn..."
+  time sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
 done
 
