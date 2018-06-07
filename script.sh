@@ -28,6 +28,6 @@ for run in {1..10}; do
   time sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
   
   info "Pulling from Docker Hub..."
-  time docker pull pmem/libpmemobj-cpp:ubuntu-16.04
+  time docker --debug --log-level "debug" pull pmem/libpmemobj-cpp:ubuntu-16.04
 done
 
