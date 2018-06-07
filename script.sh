@@ -26,5 +26,8 @@ for run in {1..10}; do
 
   info "Running apt-key for yarn..."
   time sudo apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
+  
+  info "Pulling from Docker Hub..."
+  time docker pull pmem/libpmemobj-cpp:ubuntu-16.04
 done
 
