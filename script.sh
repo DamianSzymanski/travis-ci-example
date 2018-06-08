@@ -29,5 +29,7 @@ for run in {1..10}; do
   
   info "Pulling from Docker Hub..."
   time docker --debug --log-level "debug" pull pmem/libpmemobj-cpp:ubuntu-16.04
+  
+  docker rmi pmem/libpmemobj-cpp:ubuntu-16.04
 done
 
