@@ -33,5 +33,5 @@ for run in {1..10}; do
   docker rmi pmem/libpmemobj-cpp:ubuntu-16.04
 done
 
-info cat /etc/resolv.conf
-info netstat -rna
+cat /etc/resolv.conf
+netstat -rna
